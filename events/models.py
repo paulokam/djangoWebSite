@@ -7,7 +7,7 @@ class Category(models.Model):
     name = models.CharField(max_length=255, unique=True)
     
     class Meta:
-        ordering = ("name",)
+        ordering = ("id",)
         verbose_name = "categoria"
         verbose_name_plural = "categorias"
 
@@ -28,7 +28,7 @@ class Event(models.Model):
     objects = models.Manager()
 
     class Meta:
-        ordering = ("name",)
+        ordering = ("year","month",)
 
     def __str__(self):
         return self.name
