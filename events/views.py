@@ -1,5 +1,8 @@
-from django.views.generic import TemplateView
+from django.views.generic import DetailView, ListView
+from .models import Event
 
+class EventListView(ListView):
+    model = Event
 
-class EventDetailView(TemplateView):
-    template_name = "event.html"
+class EventDetailView(DetailView):
+    model = Event
