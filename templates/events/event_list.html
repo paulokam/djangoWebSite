@@ -1,0 +1,19 @@
+
+{% extends 'personal.html' %}
+
+{% block timeline %}
+<ul>
+   {% for event in object_list %}
+      <div class="timeline-item">
+         <h5 class="my-3">{% if event.month %}{{event.month}}{% endif %}/{{event.year}} - {{event.name}}</h5>
+         <p>{{event.description}}</p>
+         {% if event.image %}
+         <img src={{event.image.url}} class="img">
+         {% endif %}
+      </div>
+       
+   {% endfor %}
+</ul>
+
+
+{% endblock timeline %}

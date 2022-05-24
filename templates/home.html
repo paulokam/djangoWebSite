@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Paulo's Website - Home
+{% endblock title %}
+
+{% block content %}
+
+<div class="container my-3">
+    <div class="row justify-content-md-center">
+        <div class="col-lg-3 mb-3 mb-lg-0">
+            <img src="../static/images/home-image.png" class="img-thumbnail" alt="Responsive image">
+        </div>
+        <div class="col-lg-9">
+            <h1 class="font-weight-bold">Olá, meu nome é Paulo!</h1>
+            <p>Sejam muito bem vindos a meu website!</p>
+            <p>Com ele, pretendo mostrar um pouco de minha tragetória <i>(ou pelo menos as partes mais interessantes kkkk)</i>.
+                Meu site é composto de três páginas:
+                <ul>
+                    <li>Home (você está aqui!)</li>
+                    <li><a a href="{% url 'pages:pro' %}" style="color: black;">>Minha História Profissional</a></li>
+                    <li><a a href="{% url 'events:personal' %}" style="color: black;">>Minha História Pessoal</a></li>
+                </ul>
+                Como os nomes indicam, cada página contará sobre uma parte específica de minha vida. Respectivamente minha vida pessoal
+                <i>(desde o dia em que nasci)</i> e profissional <i>(essa já um pouco mais recente)</i>, ambos no formato de linha do tempo. Vocês podem acessar essas páginas
+                tanto pelos <b>links da lista acima</b> quanto pelo <b>menu de tavegação no topo da página</b>.
+            </p>
+            <p>Infelizmentem, devido à deadline da entrega ter entrado em conflito com diversas atividades, não foi possível finalizar a estrutura/inputs da pagina profissional. Mas a intenção era aplicar um conceito semelhante a da página pessoal.</p>
+            <p>Bom, é isso! Desejo a você uma boa leitura, e aguardo anciosamente pela próxima etapa. </p>
+            <p>
+                Atenciosamente,<br>
+                    Paulo H. A. Kammradt
+            </p>
+            <p>
+                <i>PS: Espero que o resultado final agrade vocês da mesma maneira que agradou a mim! 
+               Me diverti bastante fazendo ele. Ah, e esse é meu primeiro projeto front-end, então 
+               peço perdão pelos erros de iniciante.</i>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock content %}
