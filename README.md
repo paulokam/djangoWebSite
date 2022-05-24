@@ -1,5 +1,6 @@
 # My First Django WebPage
 
+
 # Pre-Requisitos
 
 - Você pode encontrar as bibliotecas pré-requisitadas no arquivo requirements.txt
@@ -38,6 +39,8 @@ password: admin
 Por fim, acesse o site neste link: [http://localhost:8000/](http://localhost:8000/)
 
 Para acessar o diretório de admin: [http://localhost:8000/admin](http://localhost:8000/admin)
+
+
 Permaneço à disposição.
 
 # Referências
