@@ -8,7 +8,7 @@
 
 # Como rodar o projeto
 
-- Para executar o servidor local, execute o comando no terminal:
+- Para executar o servidor local, execute o comando no terminal dentro do diretório django-websites:
 ```
 docker-compose up --build
 ```
@@ -18,7 +18,7 @@ docker-compose up -d   // Para iniciar
 docker-compose down    // Para parar
 ```
 
-- Não esqueça de rodar as migrations:
+- Não esqueça de rodar as migrations caso faça alguma alteração nos arquivos:
 ```
 docker-compose exec web python manage.py migrate
 ```
@@ -34,6 +34,7 @@ username: admin
 password: admin
 ```
 
+# Como acessar o servidor
 Por fim, acesse o site neste link: [http://localhost:8000/](http://localhost:8000/)
 
 Para acessar o diretório de admin: [http://localhost:8000/admin](http://localhost:8000/admin)
