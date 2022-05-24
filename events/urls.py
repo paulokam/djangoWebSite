@@ -3,5 +3,5 @@ from .views import EventListView
 
 app_name = "events"
 urlpatterns = [
-    path("", EventListView.as_view(), name="list"),
+    path('minha-historia-profissional/', EventListView.as_view(), name='pro'),
 ]

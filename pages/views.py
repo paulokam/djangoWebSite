@@ -6,7 +6,8 @@ class HomePageView(TemplateView):
 
 
 class ProPageView(TemplateView):
-    template_name = "pro.html"
+    #template_name = "events/event_list.html"
+    template_name = "personal.html"
 
 class PersonalPageView(TemplateView):
     template_name = "personal.html"

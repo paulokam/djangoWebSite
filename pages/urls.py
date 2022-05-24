@@ -6,6 +6,7 @@ from .views import HomePageView, ProPageView, PersonalPageView
 app_name = 'pages'
 urlpatterns = [
     path('', HomePageView.as_view(), name='home'),
-    path('minha-historia-profissional/', ProPageView.as_view(), name='pro'),
     path('minha-historia-pessoal/', PersonalPageView.as_view(), name='personal'),
+    
+
 ]
