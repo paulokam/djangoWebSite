@@ -1,11 +1,21 @@
 # My First Django WebPage
 
+# Pre-Requisitos
+
+- Você pode encontrar as bibliotecas pré-requisitadas no arquivo requirements.txt
+- Não esqueceça de baixar o [Docker](https://docs.docker.com/get-docker/) para uma melhor utilização do programa.
+- As bibliotecas são automaticamente instaladas com os comandos abaixo, caso o Docker seja utilizado.
 
 # Como rodar o projeto
 
-- No terminal, execute o comando
+- Para executar o servidor local, execute o comando no terminal:
 ```
 docker-compose up --build
+```
+- Alternativamente, você pode executar ele em segundo plano utilizando dos seguintes comandos:
+```
+docker-compose up -d   // Para iniciar
+docker-compose down    // Para parar
 ```
 
 - Não esqueça de rodar as migrations:
@@ -13,7 +23,7 @@ docker-compose up --build
 docker-compose exec web python manage.py migrate
 ```
 
-- Não esqueça de criar um superuser para acessar a interface de admin (caso achar necessário):
+- Caso achar necessário criar um superuser para acessar a interface de admin:
 ```
 docker-compose exec web python manage.py createsuperuser
 ```
